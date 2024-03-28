@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+
+link_libraries(rt)
+
+add_executable(02mqueue_01_mqueue_creation 01_mqueue_creation.c)
+add_executable(02mqueue_02_default_attributes 02_default_attributes.c)
+add_executable(02mqueue_03_create_attributes 03_create_attributes.c)
+add_executable(02mqueue_04_queue_capacity 04_queue_capacity.c)
+add_executable(02mqueue_05_no_eof 05_no_eof.c)
+add_executable(02mqueue_06_timeouts 06_timeouts.c)
+add_executable(02mqueue_07_priority 07_priority.c)
+add_executable(02mqueue_08_async_notification_signal 08_async_notification_signal.c)
+add_executable(02mqueue_09_async_notification_thread 09_async_notification_thread.c)
+add_executable(02mqueue_10_mmap 10_mmap.c)
+add_executable(02mqueue_11_shm 11_shm.c)
+add_executable(02mqueue_12_sysv_msg 12_sysv_msg.c)
+add_executable(02mqueue_13_sysv_shm 13_sysv_shm.c)

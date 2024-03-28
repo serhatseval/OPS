@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/serhatseval/Developer/OPS/Lab - 5/Example Tasks/task90myself'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _usage, symObjAddr: 0x0, symBinAddr: 0x100003B48, symSize: 0x3C }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _usage, symObjAddr: 0x0, symBinAddr: 0x100003B48, symSize: 0x3C }
+  - { offsetInCU: 0x65, offset: 0x65, size: 0x8, addend: 0x0, symName: _child_work, symObjAddr: 0x3C, symBinAddr: 0x100003B84, symSize: 0x14 }
+  - { offsetInCU: 0x97, offset: 0x97, size: 0x8, addend: 0x0, symName: _create_children_and_pipes, symObjAddr: 0x50, symBinAddr: 0x100003B98, symSize: 0xF4 }
+  - { offsetInCU: 0xE5, offset: 0xE5, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x144, symBinAddr: 0x100003C8C, symSize: 0x234 }
+...

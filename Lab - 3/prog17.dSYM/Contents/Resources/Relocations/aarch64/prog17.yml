@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/serhatseval/Developer/OPS/Lab - 3/prog17'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000039DC, symSize: 0x25C }
+  - { offsetInCU: 0x13A, offset: 0x13A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000039DC, symSize: 0x25C }
+  - { offsetInCU: 0x250, offset: 0x250, size: 0x8, addend: 0x0, symName: _ReadArguments, symObjAddr: 0x25C, symBinAddr: 0x100003C38, symSize: 0xF0 }
+  - { offsetInCU: 0x29E, offset: 0x29E, size: 0x8, addend: 0x0, symName: _pi_estimation, symObjAddr: 0x34C, symBinAddr: 0x100003D28, symSize: 0x150 }
+...

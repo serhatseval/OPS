@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+
+add_executable(04net_01_base 01_base.c)
+add_executable(04net_02_addr 02_addr.c)
+add_executable(04net_03_pton 03_pton.c)
+add_executable(04net_04_getaddrinfo 04_getaddrinfo.c)
+add_executable(04net_05_udp 05_udp.c)
+add_executable(04net_06_udp_eph 06_udp_eph.c)
+add_executable(04net_07_tcp 07_tcp.c)
+add_executable(04net_08_tcp_forked 08_tcp_forked.c)
+add_executable(04net_09_tcp_epipe 09_tcp_epipe.c)
+add_executable(04net_10_select 10_select.c)
+add_executable(04net_11_epoll 11_epoll.c)

@@ -1,0 +1,18 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/serhatseval/Developer/OPS/Lab - 3/Lab/sop-ca'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _sethandler, symObjAddr: 0x0, symBinAddr: 0x1000034A8, symSize: 0xA4 }
+  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _SigUsr1Received, symObjAddr: 0x2660, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x5B, offset: 0x5B, size: 0x8, addend: 0x0, symName: _SigUsr2Received, symObjAddr: 0x2664, symBinAddr: 0x100008004, symSize: 0x0 }
+  - { offsetInCU: 0xC7, offset: 0xC7, size: 0x8, addend: 0x0, symName: _sethandler, symObjAddr: 0x0, symBinAddr: 0x1000034A8, symSize: 0xA4 }
+  - { offsetInCU: 0x107, offset: 0x107, size: 0x8, addend: 0x0, symName: _sigusr1_handler, symObjAddr: 0xA4, symBinAddr: 0x10000354C, symSize: 0x34 }
+  - { offsetInCU: 0x12B, offset: 0x12B, size: 0x8, addend: 0x0, symName: _sigusr2_handler, symObjAddr: 0xD8, symBinAddr: 0x100003580, symSize: 0x34 }
+  - { offsetInCU: 0x14F, offset: 0x14F, size: 0x8, addend: 0x0, symName: _usage, symObjAddr: 0x10C, symBinAddr: 0x1000035B4, symSize: 0x3C }
+  - { offsetInCU: 0x173, offset: 0x173, size: 0x8, addend: 0x0, symName: _getarguments, symObjAddr: 0x148, symBinAddr: 0x1000035F0, symSize: 0xF4 }
+  - { offsetInCU: 0x1C1, offset: 0x1C1, size: 0x8, addend: 0x0, symName: _prepareArray, symObjAddr: 0x23C, symBinAddr: 0x1000036E4, symSize: 0x80 }
+  - { offsetInCU: 0x201, offset: 0x201, size: 0x8, addend: 0x0, symName: _printing, symObjAddr: 0x2BC, symBinAddr: 0x100003764, symSize: 0x138 }
+  - { offsetInCU: 0x28B, offset: 0x28B, size: 0x8, addend: 0x0, symName: _mainWork, symObjAddr: 0x3F4, symBinAddr: 0x10000389C, symSize: 0x2BC }
+  - { offsetInCU: 0x340, offset: 0x340, size: 0x8, addend: 0x0, symName: _destroymutexes, symObjAddr: 0x6B0, symBinAddr: 0x100003B58, symSize: 0x64 }
+  - { offsetInCU: 0x3A6, offset: 0x3A6, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x714, symBinAddr: 0x100003BBC, symSize: 0x200 }
+...
