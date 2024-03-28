@@ -60,6 +60,7 @@ void setnotifyhandler(void (*f)(int, siginfo_t *, void *), int sigNo)
 
 void mq_handler(int sig, siginfo_t *info, void *p)
 {
+    printf("Received signal %d\n", sig);
     sig = sig;
     p = p;
     float res;
@@ -91,44 +92,7 @@ void mq_handler(int sig, siginfo_t *info, void *p)
         }
     }
 }
-/*
-void mq_handler(int sig, siginfo_t *info, void *p)
-{
-    mqd_t *q;
-    float res;
-    unsigned msg_prio;
 
-    q = (mqd_t *)info->si_value.sival_ptr;
-
-    static struct sigevent not ;
-    not .sigev_notify = SIGEV_SIGNAL;
-    not .sigev_signo = SIGRTMIN;
-    not .sigev_value.sival_ptr = q;
-    if (mq_notify(*q, &not ) < 0)
-        ERR("mq_notify");
-
-    for (;;)
-    {
-        if (mq_receive(*q, (char *)&res, sizeof(float), &msg_prio) < 1)
-        {
-            if (errno == EAGAIN)
-                break;
-            else
-                ERR("mq_receive");
-        }
-        int i;
-        for(i = 0; i < MAX_WORKERS; i++)
-        {
-            if(pids[i] == 0)
-                ERR("Bad notify");
-
-            if(wq[i] == *q)
-                break;
-        }
-        printf("Result from worker %d : %f\n", pids[i], res);
-    }
-}
-*/
 void child_work(mqd_t tq, int spid)
 {
     long millis;
@@ -289,21 +253,7 @@ int main(int argc, char **argv)
     parent_work(n, tq, T1, T2);
 
     printf("Before wait.\n");
-    int ret;//, stat;
-
-    //while((ret = sleep(5)));
-
-    
-    // for (int i = 0; i < n; i++) {
-    //     errno = 0;
-    //     ret = waitpid(pids[i], &stat, 0);
-    //     printf("ret = %d\n", ret);
-    //     perror("wait()");
-    //     if (ret == -1 && errno == EINTR) i--;
-    // }
-    // while(n--)
-    //     if(TEMP_FAILURE_RETRY(wait(NULL)))
-    //         ERR("wait");
+    int ret;
     
 
     while ((ret = TEMP_FAILURE_RETRY(wait(NULL))) > 0)
