@@ -8,6 +8,7 @@
 #include <sys/mman.h>
 #include <sys/wait.h>
 #include <unistd.h>
+#include <signal.h>
 
 #define MONTE_CARLO_ITERS 100000
 #define LOG_LEN 8
